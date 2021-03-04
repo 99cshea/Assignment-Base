@@ -10,13 +10,16 @@ function findMatches(wordToMatch, cities) {
   return cities.filter(place => {
     //this part figures out if city or state matches what was searched
     const regex = new RegExp(wordToMatch, 'gi');
-    return place.city.match(regex) || place.state.match(regex)
+    return place.name.match(regex) || place.city.match(regex)
   });
 }
 
 function displayMatches() {
   const matchArray = findMatches(this.value, cities);
   const html = matchArray.map(place => {
+    const regex = new RegExp(this.value, 'gi');
+    const cityName = place.city.replace(regex, `<span class="hl">${this.
+    value}</span>`);
     return `
     <li>
       <span class="name">${place.name}, ${place.city}, ${place.state}</span>
