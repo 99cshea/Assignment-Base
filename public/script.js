@@ -1,3 +1,5 @@
+// this code was written with the help of Wes Bos' great tutorial at https://www.youtube.com/watch?v=y4gZMJKAeWs //
+
 const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
 
 const cities = [];
@@ -8,7 +10,6 @@ fetch(endpoint)
 
 function findMatches(wordToMatch, cities) {
   return cities.filter(place => {
-    //this part figures out if city or state matches what was searched
     const regex = new RegExp(wordToMatch, 'gi');
     return place.name.match(regex) || place.city.match(regex)
   });
@@ -25,10 +26,9 @@ function displayMatches() {
       <span class="name">${place.name}, ${place.city}, ${place.state}</span>
       <span class="category">${place.category}</span>
     </li>
-    `; // may need to change the above to accommodate PG data
+    `;
   }).join('');
   suggestions.innerHTML = html;
-  //console.log(matchArray);
 }
 
 const searchInput = document.querySelector('.search');
