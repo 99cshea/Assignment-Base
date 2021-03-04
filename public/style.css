@@ -50,6 +50,7 @@ html {
     padding: 0;
     position: relative;
     text-transform: capitalize;
+    font-family: 'Roboto Condensed', sans-serif;
     /*perspective: 20px;*/
   }
   
