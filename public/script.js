@@ -1,33 +1,4 @@
-<!DOCTYPE html>
-
-<html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
-    <script src="" charset="utf-8"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
-    <title>Christopher Shea & Ryan Moy</title>
-</head>
-
-<body>
-    <section class="section">
-        <div class="container">
-
-            <h1 class="title">
-                Assignment 1: Revenge of the HTML Form
-            </h1>
-
-            <form class="search-form">
-                <input type="text" class="search" placeholder="City or State">
-                <ul class="suggestions">
-                    <li>Filter for a City</li>
-                    <li>or a state</li>
-                </ul>
-            </form>
-            
-            <script>
-
+//const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json'
 const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb29/raw/2bf258763cdddd704f8ffd3ea9a3e81d25e2c6f6/cities.json';
             
             const cities = [];
@@ -68,10 +39,3 @@ const endpoint = 'https://gist.githubusercontent.com/Miserlou/c5cd8364bf9b2420bb
             
             searchInput.addEventListener('change', displayMatches);
             searchInput.addEventListener('keyup', displayMatches);
-
-            </script>
-
-        </div>
-    </section>
-</body>
-</html>
