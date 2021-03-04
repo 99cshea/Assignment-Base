@@ -1,7 +1,7 @@
 /* this css formatting was heavily inspired from Wes Bos' great tutorial at https://www.youtube.com/watch?v=y4gZMJKAeWs */
 
 h1 {
-    font-size: 30px;
+    font-size: 40px;
     font-family: 'Roboto Condensed', sans-serif;
     text-align: center;
     margin-top: 10%;
@@ -77,3 +77,8 @@ html {
     background: #e92222;
   }
 
+  .taco {
+    font-weight: bold;
+    font-size: 140%;
+    color:red;
+  }

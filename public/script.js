@@ -23,9 +23,10 @@ function displayMatches() {
     value}</span>`);
     return `
     <li>
-      <span class="name">${place.name}, ${place.city}, ${place.state}</span>
+      <span class="name"><div class='taco'>${place.name}</div> ${place.address_line_1}, <div class='citystate'> ${place.city}, ${place.state}</div></span>
       <span class="category">${place.category}</span>
     </li>
+
     `;
   }).join('');
   suggestions.innerHTML = html;
