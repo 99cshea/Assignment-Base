@@ -49,7 +49,7 @@ html {
   
   .suggestions {
     margin-top: 10px;
-    padding: 0;
+    padding:0;
     position: relative;
     text-transform: capitalize;
     font-family: 'Roboto Condensed', sans-serif;
@@ -58,12 +58,13 @@ html {
   
   .suggestions li {
     background: rgb(222,222,222);
-    background: linear-gradient(0deg, rgba(222,222,222,1) 0%, rgba(219,219,219,1) 52%, rgba(227,227,227,1) 82%, rgba(237,237,237,1) 100%);
+    background: linear-gradient(0deg, rgba(220,220,220,1) 0%, rgba(200,200,200,1) 52%, rgba(235,235,235,1) 82%, rgba(237,237,237,1) 100%);
     list-style: none;
     border-bottom: 1px solid #D8D8D8;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.14);
     margin-left: -35px;
     margin-right: -35px;
+    margin-top:30px;
     padding: 20px;
     transition: background 0.2s;
     display: flex;
@@ -83,4 +84,8 @@ html {
     font-weight: bold;
     font-size: 140%;
     color:red;
+  }
+
+  .title {
+    font-family: 'Fascinate';
   }
